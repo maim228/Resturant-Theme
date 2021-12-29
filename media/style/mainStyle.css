@@ -1,0 +1,393 @@
+/* Import all libraries we will use */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Mukta:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css');
+/* Global Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Style the navigation bar */
+.topnav {
+    background-color: #30475E;
+    overflow: hidden;
+    text-align: center;
+    height: 50px;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14pt;
+    height: 50px;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #F05454;
+    color: white;
+  }
+  
+/* End of global Styles */
+
+/* First Section Styles */
+.firstSection{
+    background: url("../images/bg_first.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 24px;
+    transition:0.4s;
+    animation: changeBg 40s infinite;
+}
+@keyframes changeBg {
+    0%  {
+        background: url("../images/bg_first.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    20%  {
+        background: url("../images/bg_first_2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    40%  {
+        background: url("../images/bg_first_3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    60%  {
+        background: url("../images/bg_first.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    80%  {
+        background: url("../images/bg_first_2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100%  {
+        background: url("../images/bg_first_3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  }
+  
+.firstSection h1{
+    text-align: left;
+    font-size: 70pt;
+    font-family: 'Mukta', sans-serif;
+    color: #F5F5F5;
+}
+.firstSection h1 span{
+    transition: 0.4s;
+}
+.firstSection h1 span:nth-child(1){
+    color: #F05454;
+}
+.firstSection h1 span:nth-child(1):hover{
+    color: #a13838;
+}
+.firstSection h1 span:nth-child(2){
+    color: #30475E;
+}
+.firstSection h1 span:nth-child(2):hover{
+    color: #213141;
+}
+.firstSection h1 span:nth-child(4){
+    color: #242323;
+}
+.firstSection h1 span:nth-child(4):hover{
+    color: #000000;
+}
+.secondText{
+    text-align: left;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40pt;
+    color: #033044;
+}
+.firstSection a{
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 8px 12px;
+    background-color: #F05454;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    transition: 0.4s;
+}
+.firstSection a:hover{
+    background-color: #a13535;
+}
+.social{
+    text-align: left;
+    color: #033044;
+    font-size: 24pt;
+}
+.social .fab{
+    margin-left: 5px;
+}
+/* End first Section Styles */
+
+/* Second Section Styles */
+.secondSection{
+    width: 100%;
+    padding: 12px 24px;
+    background: url("../images/menu_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secondSection h2{
+    text-align: center;
+    font-size: 45pt;
+    font-family: 'Mukta', sans-serif;
+    color: #30475E;
+}
+.secondSection h2 span, .secondSection .secondText span{
+    color: #a13535;
+}
+.secondSection .secondText{
+    text-align: center;
+    font-size: 24pt;
+}
+.menuList{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    grid-row-gap: 50px;
+    margin: 12px auto;
+}
+.menuItem{
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    height: 350px;
+    transition: 0.4s;
+    margin: 12px 24px;
+    padding: 12px 24px;
+}
+.menuItem h1:hover{
+    color: #742525;
+}
+.menuItem h3 span{
+    color: #F05454;
+}
+.menuList p{
+    transition: 0.4s;
+}
+.menuList p:hover{
+    font-size: 14pt;
+}
+.menuItem:hover{
+    box-shadow:20px 20px 50px rgb(3, 3, 3); 
+}
+.secondSection a{
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Fira Sans', sans-serif;
+    display: block;
+    margin: auto;
+    padding: 12px 24px;
+    color: white;
+    background-color: #30475E;
+    width: 150px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.secondSection a:hover{
+    background-color: #1b2835;
+}
+/* End second Section Styles */
+/* about us Section Styles */
+.about-us-section{
+    padding: 14px 28px;
+    background: url("../images/about_bg.jpg");
+    background-size: cover;
+}
+.about-grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: auto;
+    grid-gap: 10%;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about-grid div h1{
+    font-size: 48pt;
+    font-family: 'Mukta', sans-serif;
+}
+.about-grid div h1 span:nth-child(2){
+    color: #F05454;
+}
+.about-grid div h1 span:nth-child(3){
+    color: #30475E;
+}
+.about-grid div h1 span:nth-child(4){
+    color: #242323;
+}
+.about-grid div p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16pt;
+}
+.about-grid img{
+    margin-top: 75%;
+    width: 100%;
+}
+/* End about us Section Styles */
+/* Contact us Section Styles */
+.contact-us-section{
+    padding: 28px 28px;
+    background: white;
+}
+.grid-contact{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin: auto;
+    grid-gap: 10%;
+}
+.grid-contact img{
+    width: 100%;
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.form-contact h1{
+    font-family: 'Mukta', sans-serif;
+    font-size: 40pt;
+    color: #30475E;
+}
+.form-contact h6{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10pt;
+    color: #F05454;
+}
+.form-contact label{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18pt;
+}
+.form-contact input[type='text'],.form-contact textarea{
+    outline: 0;
+    padding: 6px 12px;
+    font-size: 16pt;
+    border: 0;
+    border-bottom: 1px solid #30475E;
+}
+.form-contact input[type='submit']{
+    border: 0;
+    font-size: 16pt;
+    background-color: #742525;
+    padding: 6px 14px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.form-contact input[type='submit']:hover{
+    background-color: #3a1212;
+}
+/* End contact us Section Styles */
+/* Footer Section Styles */
+footer{
+    background: rgb(155, 154, 154);
+    padding: 12px 24px;
+    
+}
+.footer-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3.3%;
+    margin: auto;
+}
+footer h1{
+    font-family: 'Mukta', sans-serif;
+    font-size: 45pt;
+}
+footer h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14pt;
+}
+footer p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10pt;
+}
+footer h1 span:nth-child(1){
+    color: #F05454;
+}
+footer h1 span:nth-child(2){
+    color: #30475E;
+}
+footer h1 span:nth-child(3){
+    color: #242323;
+}
+footer h3{
+    font-family: 'Mukta', sans-serif;
+    font-size: 24pt;
+    color: #a13535;
+}
+footer .social .fab{
+    margin-left: 0;
+}
+/*remove mobile menu*/
+.mobileMenu{
+    display: none;
+}
+/* Contact support page*/
+.contact-top-page{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: #30475E;
+}
+.contact-top-page h1{
+    font-family: 'Mukta', sans-serif;
+    color: #F5F5F5;
+    font-size: 64pt;
+}
+.contact-top-page h2{
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+.contact-top-page h2 span{
+    color: #F05454;
+}

@@ -1,0 +1,87 @@
+@media only screen and (max-width:865px) {
+    .topnav{
+        display: none;
+    }
+    .firstSection{
+        padding: 12px 0px;
+    }
+    .firstSection h1{
+        margin:0;
+        text-align: center;
+    }
+    .secondText{
+        text-align: center;
+        font-size: 30pt;
+    }
+    .firstSection a{
+        margin: 0 auto;
+    }
+    .social{
+        text-align: center;
+    }
+    .secondSection{
+        padding: 12px 0px;
+        background: url('../images/menu_phone_bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .menuList{
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+    .menuItem{
+        height: 450px;
+    }
+    .about-grid,.grid-contact,.footer-grid{
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+    .about-grid img{
+        margin-top: 0;
+    }
+    .form-contact h1{
+        font-size: 35pt;
+    }
+    input{
+        margin-top: 25px;
+    }
+    footer{
+        margin-bottom: 100px;
+    }
+    .footer-grid{
+        text-align: center;
+    }
+    /*mobile menu*/
+    .mobileMenu{
+        display: grid;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        background: url("../images/mobile-menu.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .footerLink{
+        padding: 24px 12px;
+        font-size: 15pt;
+        color: gray;
+        text-align: center;
+        font-family: 'Fira Sans', sans-serif;
+        transition: 0.4s;
+    }
+    .footerLink:hover{
+        color: white;
+    }
+    .activeFooter{
+        color: white !important;
+    }
+    /*Support page*/
+    .contact-top-page h1{
+        font-size: 45pt;
+    }
+    .contact-top-page h2{
+        font-size: 14pt;
+    }
+}
